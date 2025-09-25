@@ -7,6 +7,13 @@ from app.services.util import generate_unique_id, date_lower_than_today_error, e
 
 
 # TODO: Implement Reminder class here
+class Reminder:
+@dataclass
+EMAIL = "email"
+SYSTEM = "system"
+def date_time(self,date:date) -> datetime:
+    return datetime(date.year, date.month, date.day)
+def type(self, string:str=None)->
 
 
 # TODO: Implement Event class here
