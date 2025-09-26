@@ -1,3 +1,4 @@
+import typing
 from dataclasses import dataclass, field
 from datetime import datetime, date, time
 from typing import ClassVar
@@ -7,13 +8,21 @@ from app.services.util import generate_unique_id, date_lower_than_today_error, e
 
 
 # TODO: Implement Reminder class here
-class Reminder:
+
 @dataclass
-EMAIL = "email"
-SYSTEM = "system"
-def date_time(self,date:date) -> datetime:
-    return datetime(date.year, date.month, date.day)
-def type(self, string:str=None)->
+class Reminder:
+
+    EMAIL:ClassVar ="email"
+    SYSTEM:ClassVar = "system"
+    date_time: datetime
+    type: str = "email"
+
+    def __str__(self):
+        return f"Reminder on {self.date_time} of type {self.type}"
+
+
+
+
 
 
 # TODO: Implement Event class here
