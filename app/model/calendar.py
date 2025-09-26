@@ -23,7 +23,7 @@ class Reminder:
 
 
 # TODO: Implement Event class here
-
+class Event:
 
 # TODO: Implement Day class here
 
