@@ -14,7 +14,7 @@ class Reminder:
 
     EMAIL:ClassVar ="email"
     SYSTEM:ClassVar = "system"
-    date_time: datetime = field(default=date)
+    date_time: datetime
 
     type: str = "email"
 
