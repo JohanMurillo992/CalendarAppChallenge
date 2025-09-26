@@ -14,15 +14,12 @@ class Reminder:
 
     EMAIL:ClassVar ="email"
     SYSTEM:ClassVar = "system"
-    date_time: datetime
+    date_time: datetime = field(default=date)
+
     type: str = "email"
 
     def __str__(self):
         return f"Reminder on {self.date_time} of type {self.type}"
-
-
-
-
 
 
 # TODO: Implement Event class here
