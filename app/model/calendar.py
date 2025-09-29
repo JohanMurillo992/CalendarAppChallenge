@@ -16,16 +16,22 @@ class Reminder:
     SYSTEM:ClassVar = "system"
     date_time: datetime
 
-    type: str = "email"
+    type: str = EMAIL
 
     def __str__(self):
         return f"Reminder on {self.date_time} of type {self.type}"
 
 
-# TODO: Implement Event class here
+#TODO: Implement Event class here
+@dataclass
 class Event:
+    title: str
+    description: str
+    date_: date
+    start_at: time
+    end_at: time
 
-# TODO: Implement Day class here
+#TODO: Implement Day class here
 
 
 # TODO: Implement Calendar class here
